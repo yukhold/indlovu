@@ -1,0 +1,43 @@
+# Private keys and credentials (NEVER commit!)
+*.p8
+AuthKey_*.p8
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+*service_account*.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Логи и данные
+*.log
+*.csv
+*.xlsx
+data/
+reports/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
