@@ -53,6 +53,22 @@ GOOGLE_SPREADSHEET_ID=your-spreadsheet-id
 
 6. Share your Google Spreadsheet with the Service Account email
 
+### 3. Firebase Analytics (optional)
+
+To pull Firebase Analytics data from BigQuery:
+
+1. Enable BigQuery API in your Google Cloud project
+2. Link Firebase to BigQuery in Firebase Console → Project Settings → Integrations
+3. Use the same `google_credentials.json` service account
+4. Add to `.env`:
+
+```ini
+FIREBASE_PROJECT_ID=your-firebase-project-id
+FIREBASE_ANALYTICS_DATASET=analytics_XXXXXXXXX
+```
+
+The dataset ID can be found in BigQuery Console under your project.
+
 ## Usage
 
 ### Manual Operations (CLI)
